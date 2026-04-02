@@ -1,0 +1,26 @@
+# Credenciales
+.env
+
+# Base de datos local
+*.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Archivos de desarrollo
+backend/*_output*.json

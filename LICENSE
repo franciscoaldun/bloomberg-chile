@@ -1,0 +1,100 @@
+LICENCIA NO COMERCIAL — BLOOMBERG CHILE
+=========================================
+
+Copyright (c) 2026 Francisco Aldunate
+Todos los derechos reservados.
+
+
+PREÁMBULO
+---------
+
+La economía es construida por todos y financiada con los impuestos de todos.
+Sin embargo, las herramientas para entenderla han estado históricamente
+reservadas para quienes pueden pagar por ellas. Este software existe para
+cambiar eso.
+
+Los datos que muestra esta plataforma provienen del Banco Central de Chile,
+una institución pública financiada por el pueblo chileno. Por lo tanto, estos
+datos son de todos. Y las herramientas para visualizarlos también deberían
+serlo.
+
+Esta licencia busca garantizar que este software permanezca libre y gratuito
+para siempre, y que nadie pueda apropiárselo para beneficio comercial privado.
+
+
+TÉRMINOS Y CONDICIONES
+-----------------------
+
+Se concede permiso, de forma gratuita, a cualquier persona que obtenga una
+copia de este software y los archivos de documentación asociados (el
+"Software"), para utilizar el Software sin restricciones, incluyendo sin
+limitación los derechos de usar, copiar, modificar, fusionar, publicar y
+distribuir copias del Software, sujeto a las siguientes condiciones:
+
+1. PROHIBICIÓN COMERCIAL
+
+   Queda estrictamente prohibido:
+
+   a) Vender el Software o cualquier parte de él.
+   b) Cobrar por el acceso al Software o a los servicios que éste provee.
+   c) Incluir el Software como parte de un producto o servicio comercial.
+   d) Utilizar el Software para generar ingresos directos o indirectos,
+      incluyendo pero no limitado a: suscripciones, paywalls, licencias
+      de pago, publicidad integrada en el Software con fines de lucro,
+      o cualquier otra forma de monetización.
+   e) Ofrecer el Software como un servicio de pago (SaaS) o incluirlo
+      en una oferta comercial de cualquier tipo.
+
+   EXCEPCIÓN: se permite el uso del Software por organizaciones sin fines
+   de lucro, instituciones educativas, organismos públicos, sindicatos,
+   organizaciones comunitarias y medios de comunicación comunitarios,
+   siempre que no cobren por el acceso al Software.
+
+2. ATRIBUCIÓN
+
+   Cualquier redistribución del Software, modificado o no, debe:
+
+   a) Incluir una copia de esta licencia.
+   b) Mantener todos los avisos de copyright.
+   c) Dar crédito visible al autor original: Francisco Aldunate.
+   d) Indicar claramente si se han realizado modificaciones.
+
+3. MISMA LICENCIA (COPYLEFT)
+
+   Cualquier obra derivada del Software debe distribuirse bajo esta
+   misma licencia. No se permite relicenciar el Software o sus
+   derivados bajo términos que permitan el uso comercial.
+
+4. DATOS PÚBLICOS
+
+   Los datos económicos mostrados por el Software provienen del Banco
+   Central de Chile y son de dominio público. Esta licencia aplica
+   únicamente al Software (código fuente, diseño, documentación), no
+   a los datos en sí.
+
+5. SIN GARANTÍA
+
+   EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
+   EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE
+   COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO
+   INFRACCIÓN. EN NINGÚN CASO EL AUTOR SERÁ RESPONSABLE DE NINGUNA
+   RECLAMACIÓN, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN
+   CONTRACTUAL, AGRAVIO O DE OTRO TIPO, QUE SURJA DE, FUERA DE O EN
+   CONEXIÓN CON EL SOFTWARE O SU USO.
+
+
+NOTA FINAL
+----------
+
+Este proyecto es de Chile para Chile, y para cualquier persona en el mundo
+que crea que la información económica no debería tener dueño.
+
+La economía la hacemos entre todos. Entenderla es un derecho, no un
+privilegio.
+
+"Cuando el pueblo se educa, el pueblo se libera."
+
+---
+Francisco Aldunate
+Universidad de Talca
+Chile, 2026

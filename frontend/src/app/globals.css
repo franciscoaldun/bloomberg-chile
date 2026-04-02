@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #FF9900;
+  --bb-amber: #FF9900;
+  --bb-amber-dim: #CC7A00;
+  --bb-white: #FFFFFF;
+  --bb-muted: #7C7C7C;
+  --bb-blue: #0B85DF;
+  --bb-green: #3BBA13;
+  --bb-red: #FF433D;
+  --bb-cyan: #4AF6C3;
+  --bb-yellow: #FEE334;
+  --bb-border: #333333;
+  --bb-surface: #121212;
+  --bb-surface-light: #1A1A1A;
+  --bb-panel-header: #0B85DF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bb-amber: var(--bb-amber);
+  --color-bb-amber-dim: var(--bb-amber-dim);
+  --color-bb-white: var(--bb-white);
+  --color-bb-muted: var(--bb-muted);
+  --color-bb-blue: var(--bb-blue);
+  --color-bb-green: var(--bb-green);
+  --color-bb-red: var(--bb-red);
+  --color-bb-cyan: var(--bb-cyan);
+  --color-bb-yellow: var(--bb-yellow);
+  --color-bb-border: var(--bb-border);
+  --color-bb-surface: var(--bb-surface);
+  --color-bb-surface-light: var(--bb-surface-light);
+  --color-bb-panel-header: var(--bb-panel-header);
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-condensed: "IBM Plex Sans Condensed", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: var(--bb-amber);
+  font-family: "IBM Plex Mono", monospace;
+  font-feature-settings: "tnum";
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Bloomberg no usa scrollbars visibles — estilo minimal */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+/* Flash animation para celdas de datos */
+@keyframes flash-green {
+  0% { background-color: rgba(59, 186, 19, 0.4); }
+  100% { background-color: transparent; }
+}
+@keyframes flash-red {
+  0% { background-color: rgba(255, 67, 61, 0.4); }
+  100% { background-color: transparent; }
+}
+
+.flash-up {
+  animation: flash-green 600ms ease-out;
+}
+.flash-down {
+  animation: flash-red 600ms ease-out;
+}
+
+/* Ticker animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-animate {
+  animation: ticker-scroll var(--ticker-duration, 30s) linear infinite;
+}
+
+/* Panel borders — estilo Bloomberg: líneas finas, sin radius, sin sombra */
+.bb-panel {
+  border: 1px solid #333333;
+  background: #000000;
+}
+
+.bb-panel-header {
+  background: #0B85DF;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tabla Bloomberg: densa, sin bordes internos gruesos */
+.bb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.bb-table th {
+  color: var(--bb-white);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  text-align: right;
+  border-bottom: 1px solid #333333;
+}
+
+.bb-table th:first-child {
+  text-align: left;
+}
+
+.bb-table td {
+  padding: 3px 8px;
+  text-align: right;
+  border-bottom: 1px solid #1A1A1A;
+  white-space: nowrap;
+}
+
+.bb-table td:first-child {
+  text-align: left;
+  color: var(--bb-white);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.bb-table tr:hover {
+  background: #0A0A0A;
+}
+
+/* Valor grande tipo quote display */
+.bb-quote-value {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 28px;
+  font-weight: 600;
+  font-feature-settings: "tnum";
+  letter-spacing: -0.5px;
+}
+
+/* Status bar inferior */
+.bb-status-bar {
+  background: #121212;
+  border-top: 1px solid #333333;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 10px;
+  color: var(--bb-muted);
+  padding: 2px 8px;
+}
